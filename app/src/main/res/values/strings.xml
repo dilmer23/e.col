@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Ecol</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="titulo_dasboarmenu">Determina a continuación el clima y algún aspecto al ecosistema a evaluar teniendo encueta la siguiente opción: Clima, hidrología del ecosistema turbidez y régimen de precipitación en la zona</string>
+
+    <!-- string btn acyivity tipo de estudios//consejos-->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_cualitativo">CUALITATIVO</string>
+    <string name="btn_cuantitativo">CUANTITATIVO</string>
+    <string name="btn_semicuantitativo">SEMICUANTITATIVO</string>
+    <string name="btn_sutrato_artificial">SUTRATO ARTIFICIAL</string>
+    <string name="tittulo_consejos">Información preliminar sobre Temas relacionados y conceptos relacionados con la evaluación de ecosistemas loticos</string>
+
+    <string name="title_activity_principal">Dashboard</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_dashboardprincipal">dashboardprincipalActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title">Welcome!</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="btn_login">Login</string>
+
+    <string name="error_msg_email">Ingrese un correo válido</string>
+    <string name="error_msg_password">Ingrese una contraseña mayor a 6 digitos</string>
+
+    <string name="olvidar_contraseña">¿Has olvidado tu <u>contraseña</u>?</string>
+    <string name="registro">¿No estás Registrado?<u>Registrarse</u></string>
+
+    ////////////////////////////////////////////////////////////////
+    <string name="cualitativo">El marco metodológico que orientó esta investigación consistió en la investigación mixta, que
+                consiste en la combinación de técnicas, métodos, enfoques, conceptos, y lenguaje cualitativo y
+                cuantitativo en un único estudio (Johnson y Onwuegbuzie 2004) Con el fin de obtener una
+                comprensión más amplia sobre el objeto de estudio (Creswell y Garret 2008), en este caso, las
+                evidencias de aprendizaje sobre el tema vertebrados de la Amazonía por parte de público
+                escolar, después de una visita a la Exposición itinerante «Animales de la Amazonía: conocer
+                para preservar».</string>
+    <string name="parrafo_otrosdatos">llena y elige los datos socio cultural y fisicoquímico que contiene su ecositema lótico </string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_principalactivity1">principalactivity1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="parrafo_hidrologico">Mira el rio y escoge una de estas tres opciones que se muestran acontinuacion , AGUA CORRE , EL AGUA EMPOSADA o SECO</string>
+    <string name="parrafo_turbiedezagua">Mira con atencion el agua de tu afluente a evaluar y selciona un opcion</string>
+    <string name="parafo_clima">Para encontrar el clima en su punto de muestreoo selecione una de las imagenes mostradas a continuacion</string>
+    <string name="parafo_regimen">Para encontrar el regimen hidrologico del rio elige tocando una de la imagenes presentadas a continuacion</string>
+    <string name="titulo_clave_dictonica">CLAVE PARA LA IDENTIFICACION DE MACROINVERTEBRADOS </string>
+    <string name="parrafo_clave_dictonica">Macroinvertebrados CON patas articuladas</string>
+    <string name="puntuacion">PUNTUACIÓN</string>
+    <string name="descrpcion_ihf">Selecione la casilla correspondiente. La puntuación no puede exceder el valor 10 </string>
+    ////////////////////////////////////////fragmen
+    ihf///////////////////////////titulos/////////////////////////
+    <string name="descrpcion_ihf2">Selecione la casilla correspondiente. La puntuación no puede exceder el valor de 20</string>
+    <string name="categorias_velocidad">4 categorías. Lento-profundo, lento-somero, rápido-profundo y rápido-somero</string>
+    <string name="descripcion_ihf3">Puntuación final</string>
+
+    <string name="rapido1">Alta frecuencia de rápidos. Relacion distancia entre rapidos/anchura del río menor a 7</string>
+    <string name="bicho">macroinvertebrados son: caracoles, conchas,cangrejos azules, camarones de río o minchillas, planarias, lombrices de agua,ácaros de agua y sanguijuelas o chupa-sangres</string>
+    <string name="estudio_cuantitativo">estudios cuyo diseño experimental es robusto, teniendo en cuenta una unidad de muestreo (área, cantidad de rocas) que permitirá comparar los sitios tanto temporal como espacialmente; además, se pueden establecer réplicas o pseudoreplicas. Para este tipo de estudio, la red surber es recomendable.</string>
+    <string name="estudio_culititativo">estudios cuyo objetivo es caracterizar la comunidad de macroinvertebrados acuáticos presentes en un sitio específico. Cualquier equipo de muestreo con red (red D-Net, de pantalla-Surber, colador de cocina) es útil en este caso.</string>
+    <string name="sustrato_artificial">sirve para estudios de colonización y procesos de sucesión en ambientes naturales. Se utiliza una canasta cuyo interior contiene sustrato del medio externo (ladrillos) o medio interno (rocas, hojas y troncos). </string>
+    <string name="estudio_semicuantitativo">tiene en cuenta la variable periodo de tiempo para el esfuerzo de muestreo, por ejemplo, en estudios de deriva donde se define un tiempo (30 minutos, 1 hora) de recolección de muestras. Cualquier equipo con red es útil en este tipo de estudio, teniendo en cuenta que puede existir un porcentaje de error, dependiendo de la persona y el equipo de trabajo.</string>
+
+
+    ///////////////////////////////////tabla ihf resultado/////////////
+    <string name="vegetacion_acuatica">vegetación acúatica</string>
+    <string name="info">El desarrollo de la propuesta de innovación de desglosará en 4 elementos de
+    impacto. A nivel ambiental, será una herramienta muy útil para evaluaciones
+    rápidas sobre el estado ecológico de algún ecosistema acuático, cuya información se
+    almacenará en un repositorio, para consulta y análisis, con acceso a cualquier
+    persona que tenga un medio digital. A nivel social, permitirá a las comunidades en
+    articulación con las entidades ambientales, realizar una vigilancia sobre cualquier
+    ecosistema lótico, siempre y cuando se evidencien tensores que puedan afectar el
+    ecosistema. A nivel formativo, donde los aprendices podrán aplicar sus
+    conocimientos en campos específicos dentro de las ciencias exactas y naturales,
+    apoyando a través de la aplicación, la toma de decisiones sobre el uso y manejo de
+        los recursos naturales.</string>
+
+    <string name="datos_basico">La información General para el punto a identificar, Nombre, Coordenadas, hora, fecha, etc. estos datos suministraran información para ubicar el punto de muestreo </string>
+    <string name="ubicacion_manual"> La ubicación ECOL LA calculara automáticamente ,Rellene los campos de su ubicación manualmente con los datos arrojados por su GPS o dispositivo de medición, en caso que, de no tener acceso a internet, utiliza la opción de manual</string>
+    <string name="title_activity_bienvenidonavigetion">bienvenidonavigetion</string>
+
+
+    <string name="descrpcion_qbr">Selecione la casilla más acertada a sus valor mostradas acontinuación como valor maximo obtendra una puntuación de 25 puntos</string>
+
+    /////////////////////////////////////////////////////////fragmet estructura de
+    riveraqbr//////////////////////////////////////////////
+
+    <string name="titulo_qbr">Índice de calidad de la vegetacion de ribera Andina (QBR-And).</string>
+    <string name="titulo_estructura_rivera">Estructura de la cubierta  (se contabiliza toda la zona de ribera)</string>
+    <string name="opcion_estructura1"> recubrimiento de árboles superior al 75 %</string>
+    <string name="opcion_estructura2">recubrimiento de árboles entre el 50 y 75 % o recubrimiento de árboles entre el 25 y 50 % y en el resto de la cubierta los arbustos superan el 25 %</string>
+    <string name="opcion_estructura3"></string>
+    <string name="opcion_estructura4">recubrimiento de árboles inferior al 50 % y el resto de la cubierta con arbustos entre 10 y 25 %</string>
+    <string name="opcion_estructura5"> sin árboles y arbustos por debajo del 10 %</string>
+    <string name="opcion_estructura6"> si en la orilla la concentración de helófitos o arbustos es superior al 50 %</string>
+    <string name="opcion_estructura7"> si en la orilla la concentración de helófitos o arbustos es entre 25 y 50 %</string>
+    <string name="opcion_estructura8">si existe una buena conexión entre la zona de arbustos y árboles con un sotobosque.</string>
+    <string name="opcion_estructura9"> si existe una distribución regular (linealidad) en los pies de los árboles y el sotobosque es > 50 %</string>
+    <string name="opcion_estructura10">si los árboles y arbustos se distribuyen en manchas, sin una continuidad</string>
+    <string name="opcion_estructura11">si existe una distribución regular (linealidad) en los pies de los árboles y el sotobosque es menor 50 %</string>
+
+    //////////////////////////////////////////////////////////fragmet grado de
+    riveraqbr////////////////////////////////////////////////
+    <string name="titulo_grado_rivera"> Grado de cubierta de la zona de ribera)</string>
+    <string name="opcion_grado1"> mayor 80 % de cubierta vegetal de la zona de ribera (las plantes anuales no se contabilizan) </string>
+    <string name="opcion_grado2"> 50-80 % de cubierta vegetal de la zona de ribera</string>
+    <string name="opcion_grado3"> 10-50 % de cubierta vegetal de la zona de ribera</string>
+    <string name="opcion_grado4">menor 10 % de cubierta vegetal de la zona de ribera</string>
+    <string name="opcion_grado5"> si la conectividad entre el bosque de ribera y el ecosistema forestal adyacente es total</string>
+    <string name="opcion_grado6"> si en la orilla la concentración de helófitos o arbustos es superior al 50 %</string>
+    <string name="opcion_grado7">   si la conectividad entre el bosque de ribera y el ecosistema forestal adyacente es entre el 25 y 50%</string>
+    <string name="opcion_grado8">si la conectividad entre el bosque de ribera y el ecosistema forestal adyacente es inferior al 25%</string>
+    ////////////////////////////fragmet grado de rivera
+    qbr////////////////////////////////////////////////
+    <string name="titulo_calidad_rivera"> Calidad de la cubierta</string>
+    <string name="opcion_calidad1">  Todos los árboles de la zona de ribera autóctonos </string>
+    <string name="opcion_calidad2"> 26 a 50% de loa árboles de ribera son especies introducidas</string>
+    <string name="opcion_calidad3"> 10-50 % de cubierta vegetal de la zona de ribera</string>
+    <string name="opcion_calidad4"> Más del 51% de los árboles de la ribera son especies introducidas</string>
+    <string name="opcion_calidad5"> >75% des los arbustos son de especies autóctonas.</string>
+    <string name="opcion_calidad6"> 51-75% o más de los arbustos de especies autóctonas</string>
+    <string name="opcion_calidad7">   26-50% de la cobertura de arbustos de especies autóctonas</string>
+    <string name="opcion_calidad8">Menos del 25% de la cobertura de los arbustos de especies autóctonas</string>
+
+    ////////////////////////////fragmet naturalidad de rivera
+    qbr////////////////////////////////////////////////
+    <string name="titulo_naturalidad_rivera"> Grado de naturalidad del canal fluvial</string>
+    <string name="opcion_naturalidad1">  Todos los árboles de la zona de ribera autóctonos </string>
+    <string name="opcion_naturalidad2"> modificaciones de las terrazas adyacentes al lecho del río con reducción del canal</string>
+    <string name="opcion_naturalidad3"> signos de alteración y estructuras rígidas intermitentes que modifican el canal del río</string>
+    <string name="opcion_naturalidad4"> río canalizado en la totalidad del tramo</string>
+    <string name="opcion_naturalidad5">  si existe alguna estructura sólida dentro del lecho del río</string>
+    <string name="opcion_naturalidad6"> si existe alguna presa o otra infraestructura transversal en el lecho del río</string>
+    <string name="opcion_naturalidad7"> si hay basuras en el tramo de muestreo de forma puntual pero abundantes</string>
+    <string name="opcion_naturalidad8">si hay un basurero permanente en el tramo estudiado</string>
+    <string name="resultadosqbr">Resultados QBR</string>
+
+</resources>
+

@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragment_elementos_heteronegialidad">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueJeans"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/clima_rutinas_acesso"
+            android:layout_width="match_parent"
+            android:layout_height="73dp"
+            android:background="@color/colorBlueJeans"
+            android:fontFamily="@font/ecol_font"
+            android:gravity="center"
+            android:shadowColor="#8a6603"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1.8"
+            android:text="Evaluación del índice de hábitat fluvial (IHF)"
+            android:textColor="#ffff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/l"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlueJeans"
+            android:fontFamily="@font/ecol_font"
+            android:shadowColor="#8a6603"
+            android:shadowDx="3"
+            android:shadowDy="2"
+            android:shadowRadius="1.8"
+            android:text="@string/descrpcion_ihf"
+            android:textAlignment="center"
+            android:textColor="#ffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlueJeans"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtpuntos"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="Puntos:"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/txtresultadospuntos"
+                android:layout_width="180dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="10dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:shrinkColumns="5"
+            android:stretchColumns="4">
+
+            <TableRow
+                android:id="@+id/tableRow0"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_button"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:id="@+id/txtinclusion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:typeface="serif"
+                    android:textSize="25sp"
+                    android:text="Elementos heterogeneidad"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:layout_span="6"/>
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:background="@drawable/bordes"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/idImagen1"
+                    android:layout_width="194dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ho1a" />
+
+                <TextView
+                    android:id="@+id/txtdescripcionrapido1"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center"
+                    android:text="Hojarasca mayor al 10% ó menor al 75%"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/porcentaje1"
+                    android:layout_width="78dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:background="@drawable/bordes"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/idImagen1"
+                    android:layout_width="194dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ho2a" />
+
+
+                <TextView
+                    android:id="@+id/txtdescripcionrapido2"
+                    android:layout_width="90dp"
+                    android:layout_height="165dp"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center"
+                    android:text="Hojarasca menor al 10% ó mayor al 75%"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/porcentaje2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:background="@drawable/bordes"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/idImagen1"
+                    android:layout_width="194dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ho3a" />
+
+
+                <TextView
+                    android:id="@+id/txtdescripcionrapido3"
+                    android:layout_width="90dp"
+                    android:layout_height="165dp"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center"
+                    android:text="Presencias de troncos Y ramas"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/porcentaje3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:background="@drawable/bordes"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/idImagen1"
+                    android:layout_width="194dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ho4a" />
+
+
+                <TextView
+                    android:id="@+id/txtdescripcionrapido3"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/ecol_font"
+                    android:textStyle="bold"
+                    android:text="Raices expuestas"/>
+
+                <CheckBox
+                    android:id="@+id/porcentaje4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:background="@drawable/bordes"
+                android:layout_height="120dp">
+
+                <ImageView
+                    android:id="@+id/idImagen1"
+                    android:layout_width="194dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/ho5a" />
+
+
+                <TextView
+                    android:id="@+id/txtdescripcionrapido3"
+                    android:layout_width="90dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/ecol_font"
+                    android:textStyle="bold"
+                    android:text="Diques naturales"/>
+
+                <CheckBox
+                    android:id="@+id/porcentaje5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="30dp" />
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

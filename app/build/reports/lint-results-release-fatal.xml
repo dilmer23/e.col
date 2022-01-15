@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="5" by="lint 3.5.2">
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="153"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="184"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="209"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="215"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="223"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="240"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="246"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="254"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="271"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="277"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="285"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_cobertura_vegetacion_acuatica.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="183"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="245"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="253"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="191"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="270"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="177"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="276"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="284"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="191"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="301"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="177"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="307"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="315"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="191"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="332"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="177"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="338"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="122"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="346"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_composicion_sustrato.xml"
+            line="191"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="153"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="184"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="209"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="215"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="223"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="240"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="246"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="254"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_elementos_heteronegialidad.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="213"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="181"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="219"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="187"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="227"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="195"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="245"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="181"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="251"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="187"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="259"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_frecuencia_rapidos.xml"
+            line="195"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="153"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="184"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="209"
+            column="17"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="178"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/idImagen1`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/idImagen1&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="215"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="123"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/txtdescripcionrapido3`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/txtdescripcionrapido3&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="223"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_procentaje_sombra.xml"
+            line="192"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/l`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="            android:id=&quot;@+id/l&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_regimen_de_velocidad.xml"
+            line="47"
+            column="13"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_regimen_de_velocidad.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DuplicateIds"
+        severity="Fatal"
+        message="Duplicate id `@+id/tableRow4`, already defined earlier in this layout"
+        category="Correctness"
+        priority="7"
+        summary="Duplicate ids within a single layout"
+        explanation="Within a layout, id&apos;s should be unique since otherwise `findViewById()` can return an unexpected view."
+        errorLine1="                    android:id=&quot;@+id/tableRow4&quot;"
+        errorLine2="                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_resultados_qbr.xml"
+            line="186"
+            column="21"/>
+        <location
+            file="C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\res\layout\fragment_fragment_resultados_qbr.xml"
+            line="156"
+            column="21"/>
+    </issue>
+
+</issues>

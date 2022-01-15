@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:padding="5dp">
+    tools:context=".segundobiologico">
+
+    <TextView
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:background="@color/colorGrass"
+        android:fontFamily="@font/ecol_font"
+        android:shadowColor="#8a6603"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1.8"
+        android:text="@string/titulo_clave_dictonica"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    </LinearLayout>

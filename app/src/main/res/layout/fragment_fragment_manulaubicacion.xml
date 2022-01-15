@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/redondos"
+    tools:context=".fragment_manulaubicacion">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/redondos"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="80dp"
+               android:background="@drawable/redondos"
+               android:gravity="center"
+               android:padding="8dp"
+               android:src="@drawable/imagen_ubicacion" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="@string/ubicacion_manual"
+               android:textSize="20sp"
+               android:textAlignment="center"
+               android:gravity="center"
+               android:fontFamily="@font/ecol_font"/>
+       </LinearLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:textAlignment="center"
+           app:counterEnabled="true"
+           app:counterMaxLength="15"
+           app:errorEnabled="true"
+           android:hint="Longitud">
+
+           <com.google.android.material.textfield.TextInputEditText
+               android:id="@+id/manuallongitud"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:backgroundTint="#800F0E0E"
+               android:inputType="text"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:textColor="#000000"
+               android:textColorHighlight="#FFEB3B"
+               android:fontFamily="@font/ecol_font"
+               android:textStyle="bold" />
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           app:counterEnabled="true"
+           app:counterMaxLength="15"
+           app:errorEnabled="true"
+           android:hint="Latitud">
+
+           <com.google.android.material.textfield.TextInputEditText
+
+               android:id="@+id/manuallatitud"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:backgroundTint="#800F0E0E"
+               android:inputType="text"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:textColor="#000000"
+               android:textColorHighlight="#FFEB3B"
+               android:fontFamily="@font/ecol_font"
+               android:textStyle="bold" />
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           app:counterEnabled="true"
+           app:counterMaxLength="15"
+           app:errorEnabled="true"
+           android:hint="Alura">
+
+           <com.google.android.material.textfield.TextInputEditText
+
+               android:id="@+id/manualaltura"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:backgroundTint="#800F0E0E"
+               android:inputType="text"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:textColor="#000000"
+               android:textColorHighlight="#FFEB3B"
+               android:fontFamily="@font/ecol_font"
+               android:textStyle="bold" />
+       </com.google.android.material.textfield.TextInputLayout>
+       <com.google.android.material.textfield.TextInputLayout
+           style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textAlignment="center"
+           app:counterEnabled="true"
+           app:counterMaxLength="15"
+           app:errorEnabled="true"
+           android:hint="Dirrección">
+
+           <com.google.android.material.textfield.TextInputEditText
+
+               android:id="@+id/manualdirrecion"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="10dp"
+               android:backgroundTint="#800F0E0E"
+               android:inputType="text"
+               android:textColorHint="@color/colorPrimaryDark"
+               android:textColor="#000000"
+               android:textColorHighlight="#FFEB3B"
+               android:fontFamily="@font/ecol_font"
+               android:textStyle="bold" />
+       </com.google.android.material.textfield.TextInputLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:background="@drawable/redondos">
+
+
+           <Button
+               android:id="@+id/btnCancel"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:background="@drawable/custom_button"
+               android:layout_marginEnd="6dp"
+               android:text="Cancel"
+               android:textAllCaps="false"
+               android:textColor="@android:color/black" />
+
+           <Button
+               android:id="@+id/btnReintentar"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="6dp"
+               android:layout_weight="1"
+               android:background="@drawable/custom_button"
+               android:text="siguiente"
+               android:textAllCaps="false"
+               android:textColor="@android:color/black" />
+       </LinearLayout>
+
+   </LinearLayout>
+
+</LinearLayout>

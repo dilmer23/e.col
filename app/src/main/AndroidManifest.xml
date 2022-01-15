@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ecol">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:hardwareAccelerated="false"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".informacion_usuario"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".otrosdatos"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".qrd" />
+        <activity android:name=".camara" />
+        <activity android:name=".ihf" />
+        <activity android:name=".protocolo_de_campo" />
+        <activity android:name=".tipo_de_estudios" />
+        <activity android:name=".componntebiologico" />
+        <activity android:name=".datos" />
+        <activity android:name=".dashboardprin" />
+        <activity android:name=".regimen_hidrologico" />
+        <activity android:name=".turbidez" />
+        <activity android:name=".hidrologia" />
+        <activity android:name=".clima" />
+        <activity android:name=".dasboarmenu" />
+        <activity android:name=".dashboard" />
+        <activity android:name=".ubicacion" />
+        <activity android:name=".consejosActivity" />
+        <activity
+            android:name=".login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".bienvenido" />
+        <activity
+            android:name=".registro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".splash_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- PARA USAR LA CAMARA EN ANDROID 7 O SUPERIOR -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

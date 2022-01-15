@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/modal_disenio">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueJeans"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/cascada" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlueJeans">
+
+            <TextView
+                android:id="@+id/text_dialog"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="42dp"
+                android:fontFamily="@font/ecol_font"
+                android:gravity="center"
+                android:text="TEXT"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/text_dialog_puntos"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="42dp"
+                android:gravity="center"
+                android:fontFamily="@font/ecol_font"
+                android:text="TEXT"
+                android:textColor="@android:color/background_dark"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/precionado_boton"
+                android:layout_marginEnd="6dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+
+            <Button
+                android:id="@+id/btnReintentar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:background="@drawable/precionado_boton"
+                android:text="Guardar"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

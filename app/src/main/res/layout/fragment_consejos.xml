@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contendorFragmet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme.NoActionBar"
+    android:background="@drawable/fondodatos"
+    tools:context=".consejosFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@drawable/pantallacarga"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.zolad.zoominimageview.ZoomInImageView
+                    android:id="@+id/imagenmuestreo1"
+                    android:layout_width="match_parent"
+                    android:layout_height="261dp"
+                    android:layout_marginStart="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="60dp"
+                    android:src="@drawable/equipos_herramientas_img" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="30dp"
+                        android:text="Lista de Herramientas"
+                        android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20sp"
+                    android:layout_marginStart="20sp"
+                    android:elevation="23dp"
+                    android:orientation="vertical">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="* Red susber" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="*Tanizy pincel" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="*Pinzas" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="*Recipientes para almacenar muestras" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="*gps medición deubicación" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#99ffffff"
+                        android:textSize="20sp"
+                        android:text="*peachimetro" />
+                </LinearLayout>
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnregresarestudios1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/precionado_boton"
+            android:drawableStart="@drawable/regresar_icono"
+            android:fontFamily="sans-serif-black"
+            android:text="Regresar/Cerrar"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</FrameLayout>

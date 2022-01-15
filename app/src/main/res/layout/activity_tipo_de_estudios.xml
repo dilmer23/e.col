@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecolfondo3_opt"
+    android:orientation="vertical"
+    tools:context=".tipo_de_estudios">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttipoestudios"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ff6b00"
+                android:text="Tipo De Estudios"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/idImagen"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/infromacion" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idNombre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        android:text="informacion preliminar de tipos de ecosistemas"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:gravity="center"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btncualitativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-black"
+                    android:textAllCaps="false"
+                    android:text="@string/btn_cualitativo"
+                    android:onClick="estudiocualitativo"
+                    android:textSize="18sp"
+                    android:background="@drawable/precionado_boton"
+                    android:drawableStart="@drawable/cualitativo_icono"/>
+
+                <Button
+                    android:id="@+id/btncuantitativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/precionado_boton"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/btn_cuantitativo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="cuantitativo"
+                    android:drawableStart="@drawable/cuantitativo_icono"/>
+                <Button
+                    android:id="@+id/btnsemicuantitativo"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/precionado_boton"
+                    android:drawableStart="@drawable/icono_semicuantitativo"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/btn_semicuantitativo"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="semicuentitativo"/>
+
+                <Button
+                    android:id="@+id/btnImplementosMues"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/precionado_boton"
+                    android:drawableStart="@drawable/icono_sustrato_artificial"
+                    android:fontFamily="sans-serif-black"
+                    android:text="@string/btn_sutrato_artificial"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="sustratoartificial"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnSiguienteCon"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="190dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@drawable/regresar_icono"
+                android:text="Regresar"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:layout_alignParentBottom="true"
+                android:onClick="regresarconsejos"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/contendortipoestudios"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-10dp"
+        android:orientation="vertical" />
+</RelativeLayout>

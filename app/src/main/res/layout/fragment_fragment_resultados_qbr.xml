@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondodatos"
+    tools:context=".fragment_resultados_qbr">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/clima_rutinas_acesso"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/colorLavander"
+        android:fontFamily="@font/ecol_font"
+        android:gravity="center"
+        android:shadowColor="#8a6603"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1.8"
+        android:text="@string/titulo_qbr"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLavander"
+        android:fontFamily="@font/ecol_font"
+        android:shadowColor="#8a6603"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1.8"
+        android:text="@string/descrpcion_qbr"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:shrinkColumns="2"
+                android:stretchColumns="7">
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:gravity="center"
+                        android:text="@string/titulo_grado_rivera"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtpuntos_grado_cubierta"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/25"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="80dp"
+                        android:text="@string/titulo_estructura_rivera"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtpuntos_estructura_cubierta"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/25"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="@string/titulo_calidad_rivera"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtpuntos_calidad_cubierta"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/25"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="@string/titulo_grado_rivera"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtpuntos_grado_naturilidad"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/25"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/resultadoqbr"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:text="Siguiente"
+        android:background="@drawable/precionado_boton"
+        tools:layout_editor_absoluteX="156dp"
+        tools:layout_editor_absoluteY="423dp" />
+</LinearLayout>

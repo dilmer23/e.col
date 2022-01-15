@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hidrologia">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clima_rutinas_acesso"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/ecol_font"
+                android:gravity="center"
+                android:text="Fase Acuatica Del Rio"
+                android:textColor="#000000"
+                android:textSize="35sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/moduloclima"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center_horizontal"
+                    android:shadowRadius="1.8"
+                    android:text="@string/parrafo_hidrologico"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="319dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ecosistema perenne"
+                    android:fontFamily="@font/ecol_font"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/ecositema_perenne"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ecositema_perenne_opt_opt"
+                    android:buttonTint="@color/colorPrimaryDark"
+                    android:textAlignment="center"
+                    android:textColor="#009688" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ecosistema Estacional"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/ecol_font"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/ecositema_estacional"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/ecositema_estacional_opt"
+                    android:textAlignment="center"
+                    android:textColor="#009688" />
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ecosistema seco"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/ecol_font"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/ecositema_seco"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/seco_rio_opt"
+                    android:textAlignment="center"
+                    android:textColor="#009688" />
+            </com.google.android.material.card.MaterialCardView>
+            <Button
+                android:id="@+id/btnSiguiente"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/estilos_bordes"
+                android:text="siguiente"
+                android:onClick="operacion"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

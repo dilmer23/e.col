@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ragment_ihf_resultados">
+
+    <TextView
+        android:id="@+id/clima_rutinas_acesso"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:background="@color/colorBlueJeans"
+        android:fontFamily="@font/ecol_font"
+        android:gravity="center"
+        android:shadowColor="#8a6603"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1.8"
+        android:text="Evaluación del índice de hábitat fluvial (IHF)"
+        android:textColor="#ffff"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueJeans"
+        android:fontFamily="@font/ecol_font"
+        android:shadowColor="#8a6603"
+        android:shadowDx="3"
+        android:shadowDy="2"
+        android:shadowRadius="1.8"
+        android:text="@string/descrpcion_ihf"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:shrinkColumns="2"
+                android:stretchColumns="7">
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:gravity="center"
+                        android:text="Inclusión rápido-sedimento"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/txtresultadorapidossedimento"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/10"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow2"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="Frecuencia de rápidos"
+                        android:textSize="20dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtresultadofrecuenciarapidos"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/10"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow3"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="Composición de substrato"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtresulsubtrato"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/20"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow4"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="Regímen de velocidad/profundidad"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtresulvelocidad"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/10"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow5"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="Porcentaje de sombra en el cauce"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtresulsombra"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/10"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"/>
+                </TableRow>
+                <TableRow
+                    android:id="@+id/tableRow6"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/bordes"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="68dp"
+                        android:text="Elementos de heterogeneidad"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/txtresulhetero"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:text="0"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:text="/10"
+                        android:textSize="25dp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/tableRow7"
+                    android:layout_width="match_parent"
+                    android:layout_height="69dp"
+                    android:background="@drawable/bordes">
+
+                    <TextView
+                        android:layout_width="274dp"
+                        android:layout_height="69dp"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"
+                        android:text="Cobertura de vegetación acuática"
+                        android:textColor="#000000"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/txtresultvegetacion"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorBlueJeansDark"
+                        android:gravity="center"
+                        android:text="/30"
+                        android:textColor="#000000"
+                        android:textSize="25dp" />
+                </TableRow>
+                <Button
+                    android:id="@+id/resultadoihf"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:text="Siguiente"
+                    android:background="@drawable/fondo_desgradado"
+                    tools:layout_editor_absoluteX="156dp"
+                    tools:layout_editor_absoluteY="423dp" />
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,185 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.ecol"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:8:5-79
+13-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:9:5-79
+14-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:10:5-65
+15-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:10:22-62
+16
+17    <uses-feature
+17-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:12:5-14:35
+18        android:name="android.hardware.Camera"
+18-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:13:9-47
+19        android:required="true" />
+19-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:14:9-32
+20
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:16:5-81
+21-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:16:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:17:5-80
+22-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:17:22-77
+23
+24    <application
+24-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:19:5-76:19
+25        android:allowBackup="true"
+25-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:21:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+28        android:hardwareAccelerated="false"
+28-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:20:9-44
+29        android:icon="@mipmap/ic_launcher"
+29-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:22:9-43
+30        android:label="@string/app_name"
+30-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:23:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:24:9-54
+32        android:supportsRtl="true"
+32-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:25:9-35
+33        android:testOnly="true"
+34        android:theme="@style/AppTheme" >
+34-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:26:9-40
+35        <activity
+35-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:28:9-29:51
+36            android:name="com.example.ecol.informacion_usuario"
+36-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:28:19-54
+37            android:screenOrientation="portrait" />
+37-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:29:13-49
+38        <activity
+38-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:30:9-32:58
+39            android:name="com.example.ecol.otrosdatos"
+39-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:31:13-39
+40            android:windowSoftInputMode="adjustResize" />
+40-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:32:13-55
+41        <activity android:name="com.example.ecol.qrd" />
+41-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:33:9-41
+41-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:33:19-38
+42        <activity android:name="com.example.ecol.camara" />
+42-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:34:9-44
+42-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:34:19-41
+43        <activity android:name="com.example.ecol.ihf" />
+43-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:35:9-41
+43-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:35:19-38
+44        <activity android:name="com.example.ecol.protocolo_de_campo" />
+44-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:36:9-56
+44-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:36:19-53
+45        <activity android:name="com.example.ecol.tipo_de_estudios" />
+45-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:37:9-54
+45-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:37:19-51
+46        <activity android:name="com.example.ecol.componntebiologico" />
+46-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:38:9-56
+46-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:38:19-53
+47        <activity android:name="com.example.ecol.datos" />
+47-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:39:9-43
+47-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:39:19-40
+48        <activity android:name="com.example.ecol.dashboardprin" />
+48-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:40:9-51
+48-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:40:19-48
+49        <activity android:name="com.example.ecol.regimen_hidrologico" />
+49-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:41:9-57
+49-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:41:19-54
+50        <activity android:name="com.example.ecol.turbidez" />
+50-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:42:9-46
+50-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:42:19-43
+51        <activity android:name="com.example.ecol.hidrologia" />
+51-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:43:9-48
+51-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:43:19-45
+52        <activity android:name="com.example.ecol.clima" />
+52-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:44:9-43
+52-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:44:19-40
+53        <activity android:name="com.example.ecol.dasboarmenu" />
+53-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:45:9-49
+53-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:45:19-46
+54        <activity android:name="com.example.ecol.dashboard" />
+54-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:46:9-47
+54-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:46:19-44
+55        <activity android:name="com.example.ecol.ubicacion" />
+55-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:47:9-47
+55-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:47:19-44
+56        <activity android:name="com.example.ecol.consejosActivity" />
+56-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:48:9-54
+56-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:48:19-51
+57        <activity
+57-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:49:9-51:58
+58            android:name="com.example.ecol.login"
+58-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:50:13-34
+59            android:windowSoftInputMode="adjustResize" />
+59-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:51:13-55
+60        <activity android:name="com.example.ecol.bienvenido" />
+60-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:52:9-48
+60-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:52:19-45
+61        <activity
+61-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:53:9-56:58
+62            android:name="com.example.ecol.registro"
+62-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:54:13-37
+63            android:screenOrientation="portrait"
+63-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:55:13-49
+64            android:windowSoftInputMode="adjustResize" />
+64-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:56:13-55
+65        <activity
+65-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:57:9-66:20
+66            android:name="com.example.ecol.splash_screen"
+66-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:58:13-42
+67            android:screenOrientation="portrait"
+67-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:59:13-49
+68            android:theme="@style/Theme.AppCompat.NoActionBar" >
+68-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:60:13-63
+69            <intent-filter>
+69-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:61:13-65:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:62:17-69
+70-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:62:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:64:17-77
+72-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:64:27-74
+73            </intent-filter>
+74        </activity> <!-- PARA USAR LA CAMARA EN ANDROID 7 O SUPERIOR -->
+75        <provider
+76            android:name="androidx.core.content.FileProvider"
+76-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:68:13-62
+77            android:authorities="com.example.ecol.provider"
+77-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:69:13-60
+78            android:exported="false"
+78-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:70:13-37
+79            android:grantUriPermissions="true" >
+79-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:71:13-47
+80            <meta-data
+80-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:72:13-74:58
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:73:17-67
+82                android:resource="@xml/provider_paths" />
+82-->C:\Users\Dilmer.Ramirez\Desktop\e.col\Ecol2.1\app\src\main\AndroidManifest.xml:74:17-55
+83        </provider>
+84        <provider
+84-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+85            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+85-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+86            android:authorities="com.example.ecol.lifecycle-process"
+86-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+87            android:exported="false"
+87-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+88            android:multiprocess="true" />
+88-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\Dilmer.Ramirez\.gradle\caches\transforms-2\files-2.1\3c03e0805bdfd6180afbf0af0c9cd9a0\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+89    </application>
+90
+91</manifest>

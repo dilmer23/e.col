@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.ecol"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.Camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.ecol.informacion_usuario"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.ecol.otrosdatos"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.example.ecol.qrd" />
+        <activity android:name="com.example.ecol.camara" />
+        <activity android:name="com.example.ecol.ihf" />
+        <activity android:name="com.example.ecol.protocolo_de_campo" />
+        <activity android:name="com.example.ecol.tipo_de_estudios" />
+        <activity android:name="com.example.ecol.componntebiologico" />
+        <activity android:name="com.example.ecol.datos" />
+        <activity android:name="com.example.ecol.dashboardprin" />
+        <activity android:name="com.example.ecol.regimen_hidrologico" />
+        <activity android:name="com.example.ecol.turbidez" />
+        <activity android:name="com.example.ecol.hidrologia" />
+        <activity android:name="com.example.ecol.clima" />
+        <activity android:name="com.example.ecol.dasboarmenu" />
+        <activity android:name="com.example.ecol.dashboard" />
+        <activity android:name="com.example.ecol.ubicacion" />
+        <activity android:name="com.example.ecol.consejosActivity" />
+        <activity
+            android:name="com.example.ecol.login"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name="com.example.ecol.bienvenido" />
+        <activity
+            android:name="com.example.ecol.registro"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.example.ecol.splash_screen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- PARA USAR LA CAMARA EN ANDROID 7 O SUPERIOR -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.ecol.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.example.ecol.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

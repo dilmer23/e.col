@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".clima">
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".principalActivity">
+
+            <TextView
+                android:id="@+id/clima_rutinas_acesso"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/colorPrimary"
+                android:fontFamily="@font/ecol_font"
+                android:gravity="center"
+                android:text="CLIMA Y RUTINAS DE ACESSO"
+                android:textColor="#000000"
+                android:textSize="25sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/moduloclima"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center_horizontal"
+                    android:shadowRadius="1.8"
+                    android:text="@string/parafo_clima"
+                    android:textColor="#000000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="319dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Soleado"
+                    android:fontFamily="@font/ecol_font"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+                <RadioButton
+                    android:id="@+id/dia_soleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    android:background="@drawable/dia_soleado_opt"
+                    android:textAlignment="center"
+                    android:textColor="#98ffffff"/>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nublado"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/ecol_font"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/dia_nublado"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/dia_nublado_opt"
+                    android:textAlignment="center"
+                    android:textColor="#99ffffff" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="LLovizna"
+                    android:textSize="20sp"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/ecol_font"
+                    android:textAlignment="center" />
+
+                <RadioButton
+                    android:id="@+id/dia_llovizna"
+                    android:layout_width="match_parent"
+                    android:layout_height="274dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/llovizna"
+                    android:textAlignment="center"
+                    android:textColor="#95ffffff" />
+            </com.google.android.material.card.MaterialCardView>
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Lluvia fuerte"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:fontFamily="@font/ecol_font"
+                        android:textAlignment="center" />
+
+                    <RadioButton
+                        android:id="@+id/dia_lluviafuerte"
+                        android:layout_width="match_parent"
+                        android:layout_height="274dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="50dp"
+                        android:background="@drawable/dia_lluvia"
+                        android:textAlignment="center"
+                        android:textColor="#95ffffff" />
+                </com.google.android.material.card.MaterialCardView>
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

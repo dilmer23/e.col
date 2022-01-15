@@ -1,0 +1,181 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="com.example.ecol"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="22"
+9-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:7:5-67
+12-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:7:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:8:5-79
+13-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:9:5-79
+14-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:9:22-76
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:10:5-65
+15-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:10:22-62
+16
+17    <uses-feature
+17-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:12:5-14:35
+18        android:name="android.hardware.Camera"
+18-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:13:9-47
+19        android:required="true" />
+19-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:14:9-32
+20
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:16:5-81
+21-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:16:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:17:5-80
+22-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:17:22-77
+23
+24    <application
+24-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:19:5-75:19
+25        android:allowBackup="true"
+25-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:20:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\f01b27bb220ecb79298884ef36a7a2fb\core-1.1.0\AndroidManifest.xml:24:18-86
+27        android:icon="@mipmap/ic_launcher"
+27-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:21:9-43
+28        android:label="@string/app_name"
+28-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:22:9-41
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:23:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:24:9-35
+31        android:theme="@style/AppTheme" >
+31-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:25:9-40
+32        <activity
+32-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:27:9-28:51
+33            android:name="com.example.ecol.informacion_usuario"
+33-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:27:19-54
+34            android:screenOrientation="portrait" />
+34-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:28:13-49
+35        <activity
+35-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:29:9-31:58
+36            android:name="com.example.ecol.otrosdatos"
+36-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:30:13-39
+37            android:windowSoftInputMode="adjustResize" />
+37-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:31:13-55
+38        <activity android:name="com.example.ecol.qrd" />
+38-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:32:9-41
+38-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:32:19-38
+39        <activity android:name="com.example.ecol.camara" />
+39-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:33:9-44
+39-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:33:19-41
+40        <activity android:name="com.example.ecol.ihf" />
+40-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:34:9-41
+40-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:34:19-38
+41        <activity android:name="com.example.ecol.protocolo_de_campo" />
+41-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:35:9-56
+41-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:35:19-53
+42        <activity android:name="com.example.ecol.tipo_de_estudios" />
+42-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:36:9-54
+42-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:36:19-51
+43        <activity android:name="com.example.ecol.componntebiologico" />
+43-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:37:9-56
+43-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:37:19-53
+44        <activity android:name="com.example.ecol.datos" />
+44-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:38:9-43
+44-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:38:19-40
+45        <activity android:name="com.example.ecol.dashboardprin" />
+45-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:39:9-51
+45-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:39:19-48
+46        <activity android:name="com.example.ecol.regimen_hidrologico" />
+46-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:40:9-57
+46-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:40:19-54
+47        <activity android:name="com.example.ecol.turbidez" />
+47-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:41:9-46
+47-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:41:19-43
+48        <activity android:name="com.example.ecol.hidrologia" />
+48-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:42:9-48
+48-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:42:19-45
+49        <activity android:name="com.example.ecol.clima" />
+49-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:43:9-43
+49-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:43:19-40
+50        <activity android:name="com.example.ecol.dasboarmenu" />
+50-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:44:9-49
+50-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:44:19-46
+51        <activity android:name="com.example.ecol.dashboard" />
+51-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:45:9-47
+51-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:45:19-44
+52        <activity android:name="com.example.ecol.ubicacion" />
+52-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:46:9-47
+52-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:46:19-44
+53        <activity android:name="com.example.ecol.consejosActivity" />
+53-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:47:9-54
+53-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:47:19-51
+54        <activity
+54-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:48:9-50:58
+55            android:name="com.example.ecol.login"
+55-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:49:13-34
+56            android:windowSoftInputMode="adjustResize" />
+56-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:50:13-55
+57        <activity android:name="com.example.ecol.bienvenido" />
+57-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:51:9-48
+57-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:51:19-45
+58        <activity
+58-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:52:9-55:58
+59            android:name="com.example.ecol.registro"
+59-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:53:13-37
+60            android:screenOrientation="portrait"
+60-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:54:13-49
+61            android:windowSoftInputMode="adjustResize" />
+61-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:55:13-55
+62        <activity
+62-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:56:9-65:20
+63            android:name="com.example.ecol.splash_screen"
+63-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:57:13-42
+64            android:screenOrientation="portrait"
+64-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:58:13-49
+65            android:theme="@style/Theme.AppCompat.NoActionBar" >
+65-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:59:13-63
+66            <intent-filter>
+66-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:60:13-64:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:61:17-69
+67-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:61:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:63:17-77
+69-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:63:27-74
+70            </intent-filter>
+71        </activity> <!-- PARA USAR LA CAMARA EN ANDROID 7 O SUPERIOR -->
+72        <provider
+73            android:name="androidx.core.content.FileProvider"
+73-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:67:13-62
+74            android:authorities="com.example.ecol.provider"
+74-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:68:13-60
+75            android:exported="false"
+75-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:69:13-37
+76            android:grantUriPermissions="true" >
+76-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:70:13-47
+77            <meta-data
+77-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:71:13-73:58
+78                android:name="android.support.FILE_PROVIDER_PATHS"
+78-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:72:17-67
+79                android:resource="@xml/provider_paths" />
+79-->C:\Users\SENA\AndroidStudioProjects\Ecol2.1\app\src\main\AndroidManifest.xml:73:17-55
+80        </provider>
+81        <provider
+81-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\55580b0ab45b69249933074462ab11c2\lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+82            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+82-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\55580b0ab45b69249933074462ab11c2\lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+83            android:authorities="com.example.ecol.lifecycle-process"
+83-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\55580b0ab45b69249933074462ab11c2\lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+84            android:exported="false"
+84-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\55580b0ab45b69249933074462ab11c2\lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+85            android:multiprocess="true" />
+85-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\SENA\.gradle\caches\transforms-2\files-2.1\55580b0ab45b69249933074462ab11c2\lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+86    </application>
+87
+88</manifest>

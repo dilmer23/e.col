@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/ecolfondo3_opt"
+    android:orientation="vertical"
+    tools:context=".bienvenido">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:background="@drawable/ecolfondo3_opt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/prueba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Bienvenido a E.COL"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                app:autoSizeTextType="none"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="36dp" />
+
+            <com.zolad.zoominimageview.ZoomInImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="-40dp"
+                android:src="@drawable/ecollogo"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="20dp"
+                android:text="Nueva evaluación"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="-1dp"
+                tools:layout_editor_absoluteY="325dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorWhite"
+                    android:textAlignment="center"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorEnabled="true"
+                    android:hint="Nombre del ecositema">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/nombreecosistema"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="40dp"
+                        android:backgroundTint="#800F0E0E"
+                        android:fontFamily="@font/average"
+                        android:inputType="text"
+                        android:shadowColor="#0DF8F7F7"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#FFEB3B"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorWhite"
+                    android:textAlignment="center"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="15"
+                    app:errorEnabled="true"
+                    android:hint="Punto de muestreo">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/puntomuestreo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginStart="40dp"
+                        android:backgroundTint="#800F0E0E"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:shadowColor="#0DF8F7F7"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#FFEB3B"
+                        android:fontFamily="@font/average"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="123dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="40dp"
+                    android:drawableStart="@drawable/city"
+                    android:fontFamily="@font/ecol_font"
+                    android:gravity="center"
+                    android:text="Departamento"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp" />
+                <Spinner
+                    android:id="@+id/iddepartamento"
+                    android:layout_width="match_parent"
+                    android:background="#80ffffff"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAlignment="center"
+                    android:textSize="20sp"
+                    android:dropDownSelector="@color/colorPrimary"
+                    android:textColorHint="@color/black"/>
+
+                <FrameLayout
+                    android:id="@+id/contendortipoestudios"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" />
+            </LinearLayout>
+            <Button
+                android:id="@+id/comezar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Comenzar"
+                android:drawableEnd="@drawable/touch"
+                android:background="@drawable/custom_button"
+                tools:layout_editor_absoluteX="156dp"
+                tools:layout_editor_absoluteY="423dp" />
+            <Button
+                android:id="@+id/resultados"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:text="Consulta resultados"
+                android:drawableEnd="@drawable/touch"
+                android:background="@drawable/custom_button"
+                tools:layout_editor_absoluteX="156dp"
+                android:onClick="consultarresultados"
+                tools:layout_editor_absoluteY="423dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:orientation="horizontal">
+           <ImageView
+               android:layout_width="120dp"
+               android:layout_height="118dp"
+               android:background="@color/colorWhite"
+               android:src="@drawable/logosena"
+               android:layout_marginTop="40dp"/>
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="118dp"
+               android:background="@color/colorWhite"
+               android:src="@drawable/logosennova"
+               android:layout_marginTop="40dp"/>
+       </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ecolfondo"
+    android:orientation="vertical"
+    tools:context=".protocolo_de_campo">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txttipoestudios"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#ff6b00"
+                android:text="PROTOCOLO DE CAMPO"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="97dp"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/idImagen"
+                    android:layout_width="90dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/infromacion" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/idNombre"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Información básica para muestreo de macroinvertebrados acuáticos en ecosistemas lóticos"
+                        android:textAlignment="center"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btncualitativo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-black"
+                android:textAllCaps="false"
+                android:text="REGISTRO DE VARIABLES"
+                android:onClick="Regitro_Variables"
+                android:textSize="18sp"
+                android:background="@drawable/botones_consejos"
+                android:drawableStart="@drawable/cualitativo_icono"/>
+
+            <Button
+                android:id="@+id/btncuantitativo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botones_consejos"
+                android:fontFamily="sans-serif-black"
+                android:text="Selecion Tramo De Estudio"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="selecion_tramo"
+                android:drawableStart="@drawable/cuantitativo_icono"/>
+            <Button
+                android:id="@+id/btnsemicuantitativo"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botones_consejos"
+                android:fontFamily="sans-serif-black"
+                android:text="Indentificación De Macroinvertebrados"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_lombriz"/>
+                android:onClick="identificacion_macros"/>
+
+            <Button
+                android:id="@+id/btntomamuestras"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botones_consejos"
+                android:fontFamily="sans-serif-black"
+                android:text="Toma De Muestras"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:onClick="toma_de_muestras"/>
+
+            <Button
+                android:id="@+id/btnembalaje"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/botones_consejos"
+                android:fontFamily="sans-serif-black"
+                android:onClick="embalaje"
+                android:text="Embalaje De Muestras"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnSiguienteCon"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/custom_button"
+                android:drawableStart="@drawable/regresar_icono"
+                android:text="Regresar"
+                android:textAlignment="center"
+                android:textColor="#ffff"
+                android:textStyle="bold"
+                android:onClick="regresarconsejostramo"/>
+
+            <FrameLayout
+                android:id="@+id/contendorprotocolocampo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-10dp"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
