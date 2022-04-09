@@ -118,7 +118,7 @@
                 android:id="@+id/tableRow2"
                 android:layout_width="match_parent"
                 android:background="@drawable/bordes"
-                android:layout_height="120dp">
+                android:layout_height="match_parent">
 
                 <ImageView
                     android:id="@+id/idImagen1"
@@ -140,10 +140,10 @@
 
                 <CheckBox
                     android:id="@+id/rapido1"
-                    android:layout_width="106dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginStart="@dimen/max_icon_size"
+                    android:layout_marginTop="@dimen/max_icon_size" />
             </TableRow>
 
             <TableRow
@@ -173,10 +173,10 @@
 
                 <CheckBox
                     android:id="@+id/rapido2"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginStart="@dimen/max_icon_size"
+                    android:layout_marginTop="@dimen/max_icon_size" />
             </TableRow>
 
             <TableRow
@@ -206,10 +206,10 @@
 
                 <CheckBox
                     android:id="@+id/rapido3"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginStart="@dimen/max_icon_size"
+                    android:layout_marginTop="@dimen/max_icon_size" />
             </TableRow>
 
             <TableRow
@@ -239,10 +239,10 @@
 
                 <CheckBox
                     android:id="@+id/rapido4"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginStart="@dimen/max_icon_size"
+                    android:layout_marginTop="@dimen/max_icon_size" />
             </TableRow>
             <TableRow
                 android:id="@+id/tableRow4"
@@ -270,10 +270,10 @@
 
                 <CheckBox
                     android:id="@+id/rapido5"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginStart="60dp"
-                    android:layout_marginTop="30dp" />
+                    android:layout_marginStart="@dimen/max_icon_size"
+                    android:layout_marginTop="@dimen/max_icon_size" />
             </TableRow>
             <TextView
                 android:layout_width="match_parent"

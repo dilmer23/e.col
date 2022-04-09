@@ -12,7 +12,7 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int iv_zoominpic = 0x7f0a0281;
+        public static final int iv_zoominpic = 0x7f0a027d;
     }
     public static final class layout {
         private layout() {}

@@ -46,6 +46,7 @@ public class bienvenido extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.icono_nuevo_registro);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
         setContentView(R.layout.activity_bienvenido);
 
         nombrecositema =(EditText) findViewById(R.id.nombreecosistema);

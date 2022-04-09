@@ -12,13 +12,13 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/header_background3"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/clima_rutinas_acesso"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:background="@color/colorPrimary"
                 android:fontFamily="@font/ecol_font"
                 android:gravity="center"
                 android:text="Fase Acuatica Del Rio"
@@ -27,24 +27,22 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
                     android:src="@drawable/moduloclima"/>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimary"
-                    android:fontFamily="@font/ecol_font"
                     android:gravity="center_horizontal"
                     android:shadowRadius="1.8"
                     android:text="@string/parrafo_hidrologico"
                     android:textColor="#000000"
-                    android:textSize="20sp" />
+                    android:textSize="15sp" />
             </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView

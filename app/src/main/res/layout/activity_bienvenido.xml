@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/ecolfondo3_opt"
+    android:background="@drawable/header_background3"
     android:orientation="vertical"
     tools:context=".bienvenido">
 
     <ScrollView
         android:id="@+id/scrollView"
-        android:background="@drawable/ecolfondo3_opt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_width="363dp"
+        android:layout_height="715dp"
+        android:background="@drawable/header_background3">
 
         <LinearLayout
             android:id="@+id/prueba"
@@ -42,7 +42,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
                 android:layout_marginBottom="-40dp"
-                android:src="@drawable/ecollogo"/>
+                android:src="@drawable/ecollogo" />
 
             <TextView
                 android:id="@+id/textView"
@@ -67,12 +67,12 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorWhite"
+                    android:hint="Nombre del ecositema"
                     android:textAlignment="center"
+                    android:textColorHint="@color/colorWhite"
                     app:counterEnabled="true"
                     app:counterMaxLength="15"
-                    app:errorEnabled="true"
-                    android:hint="Nombre del ecositema">
+                    app:errorEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/nombreecosistema"
@@ -90,30 +90,31 @@
                         android:textColorHint="@color/colorPrimaryDark"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textColorHint="@color/colorWhite"
+                    android:hint="Punto de muestreo"
                     android:textAlignment="center"
+                    android:textColorHint="@color/colorWhite"
                     app:counterEnabled="true"
                     app:counterMaxLength="15"
-                    app:errorEnabled="true"
-                    android:hint="Punto de muestreo">
+                    app:errorEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/puntomuestreo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="40dp"
-                        android:layout_marginStart="40dp"
                         android:backgroundTint="#800F0E0E"
+                        android:fontFamily="@font/average"
                         android:inputType="text"
-                        android:textColorHint="@color/colorPrimaryDark"
                         android:shadowColor="#0DF8F7F7"
                         android:textColor="#000000"
                         android:textColorHighlight="#FFEB3B"
-                        android:fontFamily="@font/average"
+                        android:textColorHint="@color/colorPrimaryDark"
                         android:textStyle="bold" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -122,6 +123,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+
                 <TextView
                     android:layout_width="123dp"
                     android:layout_height="match_parent"
@@ -132,17 +134,18 @@
                     android:text="Departamento"
                     android:textColor="@color/colorWhite"
                     android:textSize="18sp" />
+
                 <Spinner
                     android:id="@+id/iddepartamento"
                     android:layout_width="match_parent"
-                    android:background="#80ffffff"
                     android:layout_height="40dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
+                    android:background="#80ffffff"
                     android:dropDownSelector="@color/colorPrimary"
-                    android:textColorHint="@color/black"/>
+                    android:textAlignment="center"
+                    android:textColorHint="@color/black"
+                    android:textSize="20sp" />
 
                 <FrameLayout
                     android:id="@+id/contendortipoestudios"
@@ -150,6 +153,7 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical" />
             </LinearLayout>
+
             <Button
                 android:id="@+id/comezar"
                 android:layout_width="match_parent"
@@ -157,48 +161,53 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:text="Comenzar"
-                android:drawableEnd="@drawable/touch"
                 android:background="@drawable/custom_button"
+                android:drawableEnd="@drawable/touch"
+                android:text="Datos Importantes"
                 tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="423dp" />
+
             <Button
                 android:id="@+id/resultados"
                 android:layout_width="match_parent"
-                android:layout_height="46dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
-                android:text="Consulta resultados"
-                android:drawableEnd="@drawable/touch"
                 android:background="@drawable/custom_button"
-                tools:layout_editor_absoluteX="156dp"
+                android:drawableEnd="@drawable/touch"
                 android:onClick="consultarresultados"
+                android:text="Nuevo Registro"
+                tools:layout_editor_absoluteX="156dp"
                 tools:layout_editor_absoluteY="423dp" />
 
 
         </LinearLayout>
     </ScrollView>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-       <LinearLayout
-           android:layout_width="match_parent"
-           android:layout_height="wrap_content"
-           android:layout_alignParentBottom="true"
-           android:orientation="horizontal">
-           <ImageView
-               android:layout_width="120dp"
-               android:layout_height="118dp"
-               android:background="@color/colorWhite"
-               android:src="@drawable/logosena"
-               android:layout_marginTop="40dp"/>
-           <ImageView
-               android:layout_width="match_parent"
-               android:layout_height="118dp"
-               android:background="@color/colorWhite"
-               android:src="@drawable/logosennova"
-               android:layout_marginTop="40dp"/>
-       </LinearLayout>
-    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--&lt;!&ndash;        <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_alignParentBottom="true"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:orientation="horizontal">&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="120dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="118dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/colorWhite"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/logosena" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="118dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="40dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:background="@color/colorWhite"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:src="@drawable/logosennova" />&ndash;&gt;-->
+<!--&lt;!&ndash;        </LinearLayout>&ndash;&gt;-->
+<!--&lt;!&ndash;    </RelativeLayout>&ndash;&gt;-->
 </RelativeLayout>

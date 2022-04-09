@@ -40,7 +40,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -277,19 +277,21 @@
                         android:text="/30"
                         android:textColor="#000000"
                         android:textSize="25dp" />
+                    <Button
+                        android:id="@+id/resultadoihf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="20dp"
+                        android:text="Siguiente"
+                        android:background="@drawable/fondo_desgradado"
+                        tools:layout_editor_absoluteX="156dp"
+                        tools:layout_editor_absoluteY="423dp" />
                 </TableRow>
-                <Button
-                    android:id="@+id/resultadoihf"
-                    android:layout_width="match_parent"
-                    android:layout_height="46dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginRight="20dp"
-                    android:text="Siguiente"
-                    android:background="@drawable/fondo_desgradado"
-                    tools:layout_editor_absoluteX="156dp"
-                    tools:layout_editor_absoluteY="423dp" />
+
             </TableLayout>
         </LinearLayout>
+
     </ScrollView>
 </LinearLayout>

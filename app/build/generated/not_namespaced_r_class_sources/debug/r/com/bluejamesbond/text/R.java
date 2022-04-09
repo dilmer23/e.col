@@ -44,18 +44,18 @@ public final class R {
 
         public static final int auto_quality = 0x7f0a0048;
         public static final int bold = 0x7f0a0052;
-        public static final int center = 0x7f0a0083;
-        public static final int formatted = 0x7f0a0142;
-        public static final int grayscale = 0x7f0a0153;
-        public static final int high_quality = 0x7f0a0159;
-        public static final int justified = 0x7f0a0282;
-        public static final int left = 0x7f0a0288;
-        public static final int low_quality = 0x7f0a0292;
-        public static final int no_cache = 0x7f0a02b4;
-        public static final int plain = 0x7f0a02d4;
-        public static final int right = 0x7f0a02f5;
-        public static final int strikeThru = 0x7f0a0324;
-        public static final int underline = 0x7f0a038f;
+        public static final int center = 0x7f0a0082;
+        public static final int formatted = 0x7f0a0141;
+        public static final int grayscale = 0x7f0a0151;
+        public static final int high_quality = 0x7f0a0157;
+        public static final int justified = 0x7f0a027e;
+        public static final int left = 0x7f0a0284;
+        public static final int low_quality = 0x7f0a028e;
+        public static final int no_cache = 0x7f0a02b0;
+        public static final int plain = 0x7f0a02cf;
+        public static final int right = 0x7f0a02f0;
+        public static final int strikeThru = 0x7f0a031f;
+        public static final int underline = 0x7f0a038c;
     }
     public static final class styleable {
         private styleable() {}

@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.drawable.ColorDrawable;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -56,18 +58,19 @@ public class ubicacion extends AppCompatActivity {
 
 
 
+    @SuppressLint("WrongConstant")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().setTitle("\nubicacion");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.ubicacion2);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
         setContentView(R.layout.activity_ubicacion);
         tetxoubicacion=(TextView) findViewById(R.id.txtubicacion);
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
             tetxoubicacion.setJustificationMode(JUSTIFICATION_MODE_INTER_WORD);
-        }
         direccion=(EditText)findViewById(R.id.txtDireccion);
         lat=(EditText)findViewById(R.id.txtLat);
         lon=(EditText)findViewById(R.id.txtLon);
@@ -218,10 +221,13 @@ public class ubicacion extends AppCompatActivity {
             // debido a la deteccion de un cambio de ubicacion
             loc.getLatitude();
             loc.getLongitude();
+            loc.getAltitude();
             String Text1 = String.valueOf(loc.getLatitude());
             String Text2 = String.valueOf(loc.getLongitude());
+            String Text3 = String.valueOf(loc.getAltitude());
             lat.setText(Text1);
             lon.setText(Text2);
+            altura.setText(Text3);
             this.mainActivity.setLocation(loc);
 
         }

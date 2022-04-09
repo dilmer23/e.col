@@ -13,6 +13,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.os.Build;
@@ -73,6 +74,7 @@ public class dashboard extends AppCompatActivity{
         getSupportActionBar().setTitle("\nDatos Basicos");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.icono_datos_basicos);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
         getSupportActionBar().setDisplayUseLogoEnabled(true);
 
 
@@ -193,7 +195,7 @@ public class dashboard extends AppCompatActivity{
     }
 
     private void guardardatos() {
-        Intent miinten =new Intent(dashboard.this,dasboarmenu.class);
+        Intent miinten =new Intent(dashboard.this,dashboardprin.class);
         SharedPreferences preferences=getSharedPreferences("datos", Context.MODE_PRIVATE);
         String dirrec = dirrecion.getText().toString();
         String longi = longitud.getText().toString();
@@ -230,8 +232,8 @@ public class dashboard extends AppCompatActivity{
         editor.putString("codigomuestra",codigomue);
         editor.commit();
         progressDialog = new ProgressDialog(dashboard.this);
-        progressDialog.setMessage("Loading..."); // Setting Message
-        progressDialog.setTitle("ProgressDialog"); // Setting Title
+        progressDialog.setMessage("Guardando..."); // Setting Message
+        progressDialog.setTitle("Guardando InformaCión"); // Setting Title
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
         progressDialog.show(); // Display Progress Dialog
         progressDialog.setCancelable(false);

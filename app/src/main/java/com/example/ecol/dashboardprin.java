@@ -16,6 +16,7 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
 import android.opengl.Matrix;
@@ -47,7 +48,7 @@ import java.util.Map;
 import maes.tech.intentanim.CustomIntent;
 
 public class dashboardprin extends AppCompatActivity implements View.OnClickListener {
-    LinearLayout biologico,foto,ihf,prueba,qbr;
+    LinearLayout biologico,foto,ihf,prueba,qbr,clima,ubicacion;
     Button btnDesbohar,otrosdatos;
     ImageView fotos;
     Button botonCargar;
@@ -68,30 +69,33 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.icono_dashboard);
         getSupportActionBar().setDisplayUseLogoEnabled(true);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
         setContentView(R.layout.activity_dashboardprin);
         /////////////////////////////////campos variables////////////////////////////////////////////////////////////////////////////
         btnDesbohar=(Button) findViewById(R.id.btnDesbohar);
         biologico =(LinearLayout) findViewById(R.id.biologico);
+        clima =(LinearLayout) findViewById(R.id.clima);
         ihf =(LinearLayout) findViewById(R.id.ihf);
         qbr =(LinearLayout) findViewById(R.id.qbr);
         foto =(LinearLayout) findViewById(R.id.foto);
-        fotos =(ImageView) findViewById(R.id.fotos);
-        prueba =(LinearLayout) findViewById(R.id.camraprueba);
-        otrosdatos =(Button) findViewById(R.id.otrosdatos);
+        ubicacion =(LinearLayout) findViewById(R.id.ubicacion);
+
         //////////////////////Metodos/////////////////////////////////////////////////////////////////////////////////////////////////
         biologico.setOnClickListener(this);
+        clima.setOnClickListener(this);
         ihf.setOnClickListener(this);
         qbr.setOnClickListener(this);
+        ubicacion.setOnClickListener(this);
 
 
-        otrosdatos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent miIntent =new Intent(dashboardprin.this,otrosdatos.class);
-                startActivity(miIntent);
-                finish();
-            }
-        });
+//        otrosdatos.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent miIntent =new Intent(dashboardprin.this,otrosdatos.class);
+//                startActivity(miIntent);
+//                finish();
+//            }
+//        });
         btnDesbohar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -246,6 +250,14 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
                 break;
             case R.id.qbr : i = new Intent(this,qrd.class);
                 LinearLayout qbr  = (LinearLayout) findViewById(R.id.qbr);
+                startActivity(i);
+                break;
+            case R.id.clima: i = new Intent(this,dasboarmenu.class);
+                LinearLayout clima  = (LinearLayout) findViewById(R.id.clima);
+                startActivity(i);
+                break;
+            case R.id.ubicacion: i = new Intent(this,ubicacion.class);
+                LinearLayout ubicacion  = (LinearLayout) findViewById(R.id.ubicacion);
                 startActivity(i);
                 break;
             default:break;

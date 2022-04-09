@@ -11,7 +11,7 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fondoecol1">
+       android:background="@drawable/header_background3">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/colorPrimary"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -35,7 +34,7 @@
                     android:fontFamily="@font/ecol_font"
                     android:gravity="center"
                     android:textColor="#000000"
-                    android:textSize="19dp"/>
+                    android:textSize="15dp"/>
             </LinearLayout>
 
 
@@ -67,6 +66,8 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtLon"
                             android:inputType="text"
+                            android:focusable="false"
+                            android:maxLength="8"
                             android:layout_width="match_parent"
                             android:textColor="@color/black"
                             android:textColorHighlight="@color/colorFlower"
@@ -97,6 +98,8 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtLat"
                             android:inputType="text"
+                            android:focusable="false"
+                            android:maxLength="8"
                             android:layout_width="match_parent"
                             android:textColor="@color/black"
                             android:textColorHighlight="@color/colorFlower"
@@ -126,6 +129,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtDireccion"
                             android:inputType="text"
+                            android:focusable="false"
                             android:layout_width="match_parent"
                             android:textColor="@color/black"
                             android:textColorHighlight="@color/colorFlower"
@@ -155,6 +159,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/txtaltura"
                             android:inputType="number"
+                            android:focusable="false"
                             android:layout_width="match_parent"
                             android:maxLength="4"
                             android:textColor="@color/black"
@@ -185,8 +190,7 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:layout_alignParentBottom="true">
         <Button
             android:id="@+id/btnenviarUbicacion"
             android:onClick="enviarparametro"

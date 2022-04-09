@@ -8,6 +8,9 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.graphics.drawable.ColorDrawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -26,16 +29,21 @@ import com.android.volley.VolleyError;
 import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.ecol.BD.BDInsertarDatos;
+import com.example.ecol.BD.DBHelper;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.HashMap;
 import java.util.Map;
 
 public class datos extends AppCompatActivity {
-    EditText usuario,dirrecion,logitud,latitud,altura,lugar,fecha,ciudad,departamento,nombreecosistema,nombrepresional,puntoecosistema,codigomuestra,ecosisteaevaluado;
+    EditText usuario,dirrecion,logitud,latitud,altura,lugar,
+            fecha,ciudad,departamento,nombreecosistema,nombrepresional,
+            puntoecosistema,codigomuestra,ecosisteaevaluado;
     TextView clima,hidrologia,turbidez,regimenprecpotacion;
     TextView gradocubierta,estructuracubierta,calidadcubierta,gradonaturilidad,qbrresultado;
-    TextView coberturavegeteacion,elemtohetero,porcentajesombra,regimenvelocidad,compocionsustrato,frecuenciasrapidos,inclusiconrapidos,ihf;
+    TextView coberturavegeteacion,elemtohetero,porcentajesombra,regimenvelocidad,
+            compocionsustrato,frecuenciasrapidos,inclusiconrapidos,ihf;
     TextView bmwproldan,bmwzamora;
     TextView actividad;
     Button enviarResultados;
@@ -46,6 +54,7 @@ public class datos extends AppCompatActivity {
         getSupportActionBar().setTitle("\nDatos E.COL");
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setLogo(R.drawable.icono_otrosdatos);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
         getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_datos);
 
@@ -121,7 +130,7 @@ public class datos extends AppCompatActivity {
         String nombrepresiona =preferences.getString("nombrepresional","");
         String puntoecosistem =preferences.getString("puntoecosistema","");
         String codigomuestr =preferences.getString("codigomuestra","");
-        String clim =preferences.getString("clima","");
+        final String clim =preferences.getString("clima","");
         String turbide =preferences.getString("turbidez","");
         String regime =preferences.getString("regimen","");
         String hidrolog =preferences.getString("hidrologia","");
@@ -142,7 +151,7 @@ public class datos extends AppCompatActivity {
         String regimen_velocidad =preferences.getString("puntos_regimen_velocidad","");
         String resultadoihf =preferences.getString("puntos_ihf","-");
         /////////////////////////////////////////////biologia///////////////////////////////////////////////
-         String biologico1 = preferences.getString("zamora","-");
+         final String biologico1 = preferences.getString("zamora","-");
          String biologico2 = preferences.getString("roldan","-");
         //String res = String.valueOf(biologico1);
 
@@ -194,6 +203,52 @@ public class datos extends AppCompatActivity {
         enviarResultados.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+//                DBHelper dbHelper = new DBHelper(datos.this);
+//                SQLiteDatabase db = dbHelper.getWritableDatabase();
+//
+//                if(db!= null){
+//                    Toast.makeText(datos.this, "CREADA CON EXITO", Toast.LENGTH_LONG).show();
+//                } else {
+//                    Toast.makeText(datos.this, "error", Toast.LENGTH_LONG).show();
+//                }
+                if(!usuario.getText().toString().equals("") && !dirrecion.getText().toString().equals("")) {
+
+                    BDInsertarDatos bdInsertarDatos = new BDInsertarDatos(datos.this);
+                    long id = bdInsertarDatos.insertarDatos(usuario.getText().toString(),
+                            dirrecion.getText().toString(),
+                            logitud.getText().toString(),
+                            latitud.getText().toString(),
+                            altura.getText().toString(),
+                            ecosisteaevaluado.getText().toString(),
+                            lugar.getText().toString(),
+                            fecha.getText().toString(),
+                            ciudad.getText().toString(),
+                            departamento.getText().toString(),
+                            nombrepresional.getText().toString(),
+                            puntoecosistema.getText().toString(),
+                            nombreecosistema.getText().toString(),
+                            codigomuestra.getText().toString(),
+                            clima.getText().toString(),
+                            hidrologia.getText().toString(),
+                            turbidez.getText().toString(),
+                            regimenprecpotacion.getText().toString(),
+                            qbrresultado.getText().toString(),
+                            ihf.getText().toString(),
+                            bmwproldan.getText().toString(),
+                            bmwzamora.getText().toString(),
+                            actividad.getText().toString());
+
+                    if (id > 0) {
+                        Toast.makeText(datos.this, "REGISTRO GUARDADO", Toast.LENGTH_LONG).show();
+                        limpiar();
+                    } else {
+                        Toast.makeText(datos.this, "ERROR AL GUARDAR REGISTRO", Toast.LENGTH_LONG).show();
+                    }
+                } else {
+                    Toast.makeText(datos.this, "DEBE LLENAR LOS CAMPOS OBLIGATORIOS", Toast.LENGTH_LONG).show();
+                }
                 ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
                 NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
 
@@ -203,34 +258,49 @@ public class datos extends AppCompatActivity {
                     sinconexion();
                 }
             }
+
+            private void limpiar() {
+
+            }
         });
 
     }
 
     private void sinconexion() {
-        final AlertDialog.Builder mysalir = new AlertDialog.Builder(this);
-        mysalir.setMessage("Desea guardar la información obtenida");
-        mysalir.setTitle("Usted no tiene conexión a internet");
-        mysalir.setPositiveButton("Si", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Intent miIntent =new Intent(datos.this,dashboardprin.class);
-                startActivity(miIntent);
-                finish();
-            }
-        });
-        mysalir.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                Intent miIntent =new Intent(datos.this,bienvenido.class);
-                SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
-                preferences.edit().clear().commit();
-                startActivity(miIntent);
-                finish();
-            }
-        });
-        AlertDialog dialogInterface = mysalir.create();
-        dialogInterface.show();
+
+        DBHelper dbHelper = new DBHelper(datos.this);
+
+        SQLiteDatabase bd = dbHelper.getWritableDatabase();
+
+        if (bd != null){
+            Toast.makeText(datos.this,"Guardado con exito",Toast.LENGTH_LONG);
+        }else{
+            Toast.makeText(datos.this,"No se Guardado con exito",Toast.LENGTH_LONG);
+        }
+
+//        final AlertDialog.Builder mysalir = new AlertDialog.Builder(this);
+//        mysalir.setMessage("Desea guardar la información obtenida");
+//        mysalir.setTitle("Usted no tiene conexión a internet");
+//        mysalir.setPositiveButton("Si", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                Intent miIntent =new Intent(datos.this,dashboardprin.class);
+//                startActivity(miIntent);
+//                finish();
+//            }
+//        });
+//        mysalir.setNegativeButton("No", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialogInterface, int i) {
+//                Intent miIntent =new Intent(datos.this,bienvenido.class);
+//                SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
+//                preferences.edit().clear().commit();
+//                startActivity(miIntent);
+//                finish();
+//            }
+//        });
+//        AlertDialog dialogInterface = mysalir.create();
+//        dialogInterface.show();
     }
 
     private void ejecutarservico(final String URL){

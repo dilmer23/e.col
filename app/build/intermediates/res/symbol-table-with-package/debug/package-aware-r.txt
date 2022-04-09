@@ -1286,6 +1286,7 @@ drawable flrcha
 drawable fodo_ecol_1_opt
 drawable fondo2_opt
 drawable fondo_desgradado
+drawable fondo_ecol2
 drawable fondo_registro
 drawable fondobienvenido
 drawable fondoclima_opt
@@ -1309,6 +1310,7 @@ drawable gradocubierta1
 drawable gradocubierta3
 drawable gradodecubierta2
 drawable gyrinidae
+drawable header_background3
 drawable helicopsychidae
 drawable hidrophilus
 drawable ho1a
@@ -1598,7 +1600,6 @@ id calidad6
 id calidad7
 id calidad8
 id calidadcubierta
-id camraprueba
 id cancel_action
 id canios
 id categoria1
@@ -1798,7 +1799,6 @@ id fixed
 id forever
 id formatted
 id foto
-id fotos
 id frecuenciasrapidos
 id fullscreen_content_controls
 id ghost_view
@@ -2103,8 +2103,6 @@ id ifRoom
 id ihf
 id image
 id imageView
-id imagen
-id imagen2
 id imagenmuestreo1
 id imagenmuestreo2
 id imagenmuestreo3
@@ -2186,7 +2184,6 @@ id opcion5
 id opcion6
 id opcion7
 id opcion8
-id otrosdatos
 id outline
 id packed
 id parallax
@@ -2325,6 +2322,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id tituloLogo
 id titulodatos
 id titulofrgament
 id toolbar
@@ -2384,6 +2382,7 @@ id txtresulvelocidad
 id txttipoestudios
 id txtubicacion
 id txtuser
+id ubicacion
 id unchecked
 id underline
 id uniform

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/fondologin"
+    android:background="@drawable/header_background3"
     tools:context=".datos">
 
     <ScrollView
@@ -958,8 +958,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="140dp"
         android:windowSoftInputMode="adjustPan"
-        android:layout_alignParentBottom="true"
-        android:background="@color/colorPrimary">
+        android:layout_alignParentBottom="true">
 
         <Button
             android:id="@+id/resultados"

@@ -20,10 +20,10 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int default_scroll_handle_bottom = 0x7f0800a4;
-        public static final int default_scroll_handle_left = 0x7f0800a5;
-        public static final int default_scroll_handle_right = 0x7f0800a6;
-        public static final int default_scroll_handle_top = 0x7f0800a7;
+        public static final int default_scroll_handle_bottom = 0x7f0800b0;
+        public static final int default_scroll_handle_left = 0x7f0800b1;
+        public static final int default_scroll_handle_right = 0x7f0800b2;
+        public static final int default_scroll_handle_top = 0x7f0800b3;
     }
     public static final class styleable {
         private styleable() {}

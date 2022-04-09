@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,6 +28,11 @@ public class clima extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("\nClima");
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.iconoclima);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorBlueJeans)));
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
         setContentView(R.layout.activity_clima);
 
         r1 =(RadioButton)findViewById(R.id.dia_soleado);
@@ -38,7 +44,7 @@ public class clima extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (r1.isChecked()){
-                    String cadena="dia_soleado";
+                    String cadena="dia soleado";
                     SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
                     String sherclima=cadena;
                     SharedPreferences.Editor editor= preferences.edit();
@@ -55,7 +61,7 @@ public class clima extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (r2.isChecked()){
-                    String cadena="dia_nublado";
+                    String cadena="dia nublado";
                     SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
                     String sherclima=cadena;
                     SharedPreferences.Editor editor= preferences.edit();
@@ -72,7 +78,7 @@ public class clima extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (r3.isChecked()){
-                    String cadena="dia_llovizna";
+                    String cadena="dia llovizna";
                     SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
                     String sherclima=cadena;
                     SharedPreferences.Editor editor= preferences.edit();
@@ -89,7 +95,7 @@ public class clima extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (r4.isChecked()){
-                    String cadena="dia_lluvia_fuerte";
+                    String cadena="dia lluvia fuerte";
                     SharedPreferences preferences= getSharedPreferences("datos", Context.MODE_PRIVATE);
                     String sherclima=cadena;
                     SharedPreferences.Editor editor= preferences.edit();

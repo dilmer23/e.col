@@ -29,7 +29,7 @@ public class otrosdatos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otrosdatos);
         comezar =(Button) findViewById(R.id.comezar);
-        /////////////////////////////chebok otros datos////////////////////////////
+        /* esto son los checkbok y es donde se obtiene los datos */
         agricultura =(CheckBox) findViewById(R.id.agricultura);
         pastoreo =(CheckBox) findViewById(R.id.pastoreo);
         recreativo =(CheckBox) findViewById(R.id.recreativo);

@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.bluejamesbond:textjustify-android:2.1.6@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77d46c9c2ead0b02405516c9ef0eb77c/textjustify-android-2.1.6/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77d46c9c2ead0b02405516c9ef0eb77c/textjustify-android-2.1.6/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/77d46c9c2ead0b02405516c9ef0eb77c/textjustify-android-2.1.6/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03457ad70a86278e0fe5d14687b48fb7/textjustify-android-2.1.6/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03457ad70a86278e0fe5d14687b48fb7/textjustify-android-2.1.6/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/03457ad70a86278e0fe5d14687b48fb7/textjustify-android-2.1.6/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.bluejamesbond/textjustify-android/2.1.6/5adb663bc45652ae3c3ea94936e30e7e6e1cf527/textjustify-android-2.1.6-javadoc.jar!/" />
