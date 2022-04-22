@@ -80,7 +80,7 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
         foto =(LinearLayout) findViewById(R.id.foto);
         ubicacion =(LinearLayout) findViewById(R.id.ubicacion);
 
-        //////////////////////Metodos/////////////////////////////////////////////////////////////////////////////////////////////////
+        //////////////////Métodos
         biologico.setOnClickListener(this);
         clima.setOnClickListener(this);
         ihf.setOnClickListener(this);
@@ -105,7 +105,7 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
             }
         });
 
-        //////////////////////////// PERMISOS PARA ANDROID 6 O SUPERIOR/////////////////////////////////////////////////////////////////////////////////////
+        ////////////PERMISOS PARA ANDROID 6 O SUPERIOR
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
                 != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE}, 0);
@@ -235,7 +235,7 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
         //Agregar solicitud a la cola
         requestQueue.add(stringRequest);
     }
-    ///////////////////////////////////////////menu dasboar//////////////////////////////////////////////////////////////////////////////////////////////////
+    /////////Menú Pagina de Acciones e.col
     @Override
     public void onClick(View view) {
         Intent i ;
@@ -263,7 +263,7 @@ public class dashboardprin extends AppCompatActivity implements View.OnClickList
             default:break;
         }
     }
-    //////////////////////////////////////////regresar metodo de boton retroceder//////////////////////////////////////////////////////////////////////
+    ////////////Regresar metodo de boton retroceder
     @Override
     public void onBackPressed() {
         final AlertDialog.Builder mysalir = new AlertDialog.Builder(this);
